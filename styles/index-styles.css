@@ -1,0 +1,127 @@
+/* 
+ * Removes default margin & padding from all element tags so 
+ * that there are no white gaps around the edges of the webpage 
+ */
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 2.5vw 0 2.5vw 3vw;
+  
+  background: linear-gradient(90deg, rgba(3, 187, 49, 0.75), rgba(0, 228, 209, 0.75)), 
+    url(../img/healthy-food-ella-olsson.jpg); 
+  /* ^^^ Sets header background image and applies a semi-transparent color overlay ^^^ */
+
+  background-size: 100%;
+  background-position-y: 60%; /* Lowers background img to a part that looks pretty stylish */
+  color: white;
+
+  font-size: 3vw;
+}
+
+/* START OF NAVBAR STYLES */
+nav {
+  font-size: 0;
+  background-color: green;
+  padding: 1vh 2vw 1vh 0;
+}
+
+nav ul li {
+  font-size: min(3vw, 36px);
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+  display: inline;
+  background-color: green;
+  padding: 1vh 2vw 1vh 2vw;
+  max-width: 5vw;
+}
+nav ul li:hover {
+  background-color: darkgreen;
+}
+/*  END OF NAVBAR STYLES  */
+
+/* START OF MAIN SECTION STYLES */
+  #main-body {
+    display: flex;
+  }
+
+  section {
+    float: left;
+    width: 75vw;
+    padding: 5vh 5vw 5vh 5vw;
+    flex-grow: 1;
+  }
+  section h1 {
+    font-size: 3vw;
+  }
+
+  aside {
+    float: left;
+    width: 30vw;
+    background-color: gold;
+    text-align: center;
+    padding: 5vh 0.5vw 5vh 0.5vw;
+  }
+  aside h2 {
+    font-size: 2.5vw;
+  }
+  .order-items {
+    margin: 1vw;
+    padding: 20px;
+    background-color: lightgoldenrodyellow;
+    border-radius: 20px;
+    height: 100px;
+    width: 25vw;
+  }
+  .order-items ul li {
+    list-style: none;
+    text-decoration: none;
+    text-align: left;
+    padding-bottom: 5px;
+    border-bottom: gray solid 1px;
+  }
+/*  END OF MAIN SECTION STYLES  */
+
+/* START OF Order Form Styles */
+  .order-form {
+    margin-top: 20px;
+    padding: 2vw;
+    height: 20vh;
+    background-color: rgb(197, 224, 206);
+    border-radius: 10px;
+  }
+  .order-form button {
+    padding: 1vw;
+    width: 8vw;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-size: 1vw;
+    border: none;
+    border-radius: 10px;
+  }
+  .order-form button:hover {
+    background-color: darkgreen;
+  }
+  .order-form button:active {
+    background-color: rgb(0, 51, 0);
+  }
+
+  .add-ons div {
+    background-color: rgb(115, 214, 115);
+    width: 24.5vw;
+    padding: 1vw;
+    margin: 5px;
+    color: white;
+  }
+  .add-ons div:hover {
+    background-color: green;
+  }
+  .add-ons div:checked {
+    background-color: green;
+  }
+/* END OF Order Form Styles */
