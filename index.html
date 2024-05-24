@@ -36,25 +36,24 @@
         <br>
 
         <div class="add-ons">
-          <div><input type="checkbox"> <label for="checkbox">Lettuce, tomato, & onions</label></div>
-          <div><input type="checkbox"> <label for="checkbox">Ketchup, mustard, & mayo</label> </div>
-          <div><input type="checkbox"> <label for="checkbox">French Fries</label>             </div>
+          <div><input type="checkbox" id="chk1"> <label for="chk1">Lettuce, tomato, & onions</label></div>
+          <div><input type="checkbox" id="chk2"> <label for="chk2">Ketchup, mustard, & mayo </label></div>
+          <div><input type="checkbox" id="chk3"> <label for="chk3">French Fries             </label></div>
         </div>
+
+        <div class="form-totals">
+          <label for="subtotal">Subtotal</label><input type="text" name="" id="subtotal">
+          <label for="tax"     >Tax     </label><input type="text" name="" id="tax">
+          <label for="total"   >Total   </label><input type="text" name="" id="total">
+        </div>
+
+        <button id="btn-place-order">Place Order</button>
       </div>
     </section>
-
-    <!-- <aside id="cart-preview">
-      <h2>Current Order</h2>
-      <div class="order-items">
-        <ul>
-          <li>1x cheeseburger</li>
-        </ul>
-       
-      </div>
-    </aside> -->
 </div>
 
   <!-- FOOTER -->
   <footer></footer>
 </body>
 </html>
+<script src="scripts/index.js"></script>

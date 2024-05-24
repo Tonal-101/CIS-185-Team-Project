@@ -46,61 +46,43 @@ nav ul li:hover {
 
 /* START OF MAIN SECTION STYLES */
   #main-body {
-    display: flex;
+    
   }
 
   section {
-    float: left;
-    width: 75vw;
+    margin: auto;
+    width: max-content;
     padding: 5vh 5vw 5vh 5vw;
-    flex-grow: 1;
+    border: red 2px solid;
   }
   section h1 {
     font-size: 3vw;
-  }
-
-  aside {
-    float: left;
-    width: 30vw;
-    background-color: gold;
-    text-align: center;
-    padding: 5vh 0.5vw 5vh 0.5vw;
-  }
-  aside h2 {
-    font-size: 2.5vw;
-  }
-  .order-items {
-    margin: 1vw;
-    padding: 20px;
-    background-color: lightgoldenrodyellow;
-    border-radius: 20px;
-    height: 100px;
-    width: 25vw;
-  }
-  .order-items ul li {
-    list-style: none;
-    text-decoration: none;
-    text-align: left;
-    padding-bottom: 5px;
-    border-bottom: gray solid 1px;
+    width: max-content;
+    margin: auto;
   }
 /*  END OF MAIN SECTION STYLES  */
 
 /* START OF Order Form Styles */
+  .entrees {
+    text-align: center;
+  }
   .order-form {
+    margin: auto;
     margin-top: 20px;
     padding: 2vw;
-    height: 20vh;
+    height: max-content;
+    width: max-content;
     background-color: rgb(197, 224, 206);
     border-radius: 10px;
   }
   .order-form button {
     padding: 1vw;
-    width: 8vw;
+    width: 10.1vw;
+    min-width: max-content;
     background-color: green;
     color: white;
     font-weight: bold;
-    font-size: 1vw;
+    font-size: 1.3em;
     border: none;
     border-radius: 10px;
   }
@@ -111,9 +93,12 @@ nav ul li:hover {
     background-color: rgb(0, 51, 0);
   }
 
+  .add-ons {
+  }
   .add-ons div {
-    background-color: rgb(115, 214, 115);
-    width: 24.5vw;
+    background-color: rgb(89, 194, 89);
+    width: 29vw;
+    font-size: 1.2em;
     padding: 1vw;
     margin: 5px;
     color: white;
@@ -121,7 +106,23 @@ nav ul li:hover {
   .add-ons div:hover {
     background-color: green;
   }
-  .add-ons div:checked {
-    background-color: green;
+  label {
+    display: inline-block;
+    width: 90%;
+  }
+
+  .form-totals {
+    margin: 15px 5px;
+  }
+  .form-totals label {
+    display: flex;
+    margin: 10px 0 0 0;
+  }
+
+  #btn-place-order {
+    width: 100%;
+    margin: 25px 0 0 0;
+    background-color: gold;
+    color: rgb(53, 40, 0);
   }
 /* END OF Order Form Styles */
