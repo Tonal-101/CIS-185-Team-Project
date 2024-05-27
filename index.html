@@ -28,26 +28,26 @@
       
       <div class="order-form">
         <div class="entrees">
-          <button>Hamburger</button>
-          <button>Pizza</button>
-          <button>Salad</button>
+          <button class="btn-default" id="hamburger" onclick="chooseEntree(this.id)">Hamburger</button>
+          <button class="btn-default" id="pizza"     onclick="chooseEntree(this.id)">Pizza    </button>
+          <button class="btn-default" id="salad"     onclick="chooseEntree(this.id)">Salad    </button>
         </div>
 
         <br>
 
         <div class="add-ons">
-          <div><input type="checkbox" id="chk1"> <label for="chk1">Lettuce, tomato, & onions</label></div>
-          <div><input type="checkbox" id="chk2"> <label for="chk2">Ketchup, mustard, & mayo </label></div>
-          <div><input type="checkbox" id="chk3"> <label for="chk3">French Fries             </label></div>
+          <div><input type="checkbox" id="lettuce"> <label for="chk1">Lettuce, tomato, & onions</label></div>
+          <div><input type="checkbox" id="ketchup"> <label for="chk2">Ketchup, mustard, & mayo </label></div>
+          <div><input type="checkbox" id="fries"> <label for="chk3">French Fries             </label></div>
         </div>
 
         <div class="form-totals">
-          <label for="subtotal">Subtotal</label><input type="text" name="" id="subtotal">
-          <label for="tax"     >Tax     </label><input type="text" name="" id="tax">
-          <label for="total"   >Total   </label><input type="text" name="" id="total">
+          <label for="subtotal">Subtotal</label><input readonly type="text" value="$0.00" id="subtotal">
+          <label for="tax"     >Tax     </label><input readonly type="text" value="$0.00" id="tax">
+          <label for="total"   >Total   </label><input readonly type="text" value="$0.00" id="total">
         </div>
 
-        <button id="btn-place-order">Place Order</button>
+        <button class="btn-default" id="btn-place-order" onclick="placeOrder()">Place Order</button>
       </div>
     </section>
 </div>

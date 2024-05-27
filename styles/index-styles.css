@@ -45,10 +45,6 @@ nav ul li:hover {
 /*  END OF NAVBAR STYLES  */
 
 /* START OF MAIN SECTION STYLES */
-  #main-body {
-    
-  }
-
   section {
     margin: auto;
     width: max-content;
@@ -75,7 +71,7 @@ nav ul li:hover {
     background-color: rgb(197, 224, 206);
     border-radius: 10px;
   }
-  .order-form button {
+  .btn-default {
     padding: 1vw;
     width: 10.1vw;
     min-width: max-content;
@@ -86,15 +82,27 @@ nav ul li:hover {
     border: none;
     border-radius: 10px;
   }
-  .order-form button:hover {
+  
+  .btn-default:hover {
     background-color: darkgreen;
   }
-  .order-form button:active {
-    background-color: rgb(0, 51, 0);
+
+  /* Selected button */
+  .btn-active-entree {
+    padding: 1vw;
+    width: 10.1vw;
+    min-width: max-content;
+    background-color: rgb(226, 45, 0);
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 10px;
+  }
+  .btn-active-entree:hover {
+    background-color: rgb(155, 34, 4);
   }
 
-  .add-ons {
-  }
   .add-ons div {
     background-color: rgb(89, 194, 89);
     width: 29vw;
@@ -124,5 +132,8 @@ nav ul li:hover {
     margin: 25px 0 0 0;
     background-color: gold;
     color: rgb(53, 40, 0);
+  }
+  #btn-place-order:hover {
+    background-color: rgb(209, 179, 8);
   }
 /* END OF Order Form Styles */
