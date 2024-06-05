@@ -13,20 +13,7 @@ const addOnPrice     = 0.75;
 function placeOrder() {
   
 
-  // checks if user ordered hamburger and adds to subtotal
-  if(document.getElementById("hamburger").classList.contains("btn-active-entree")) {
-    subtotal += hamburgerPrice;
-  }
 
-  // checks if user ordered pizza and adds to subtotal
-  if(document.getElementById("pizza").classList.contains("btn-active-entree")) {
-    subtotal += pizzaPrice;
-  }
-
-  // checks if user ordered salad and adds to subtotal
-  if(document.getElementById("salad").classList.contains("btn-active-entree")) {
-    subtotal += saladPrice;
-  }
 }
 
 function chooseEntree(buttonID) {
@@ -47,7 +34,8 @@ function chooseEntree(buttonID) {
 }
 
 function chooseAddOns() {
-  const selectedItem = document.getElementById(buttonID);
+  const addOns = document.getElementsByClassName("add-on-items");
+  
 }
 
 function getEntreePrice(id) {
