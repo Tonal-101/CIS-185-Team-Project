@@ -59,19 +59,19 @@ nav ul li:hover {
 /*  END OF MAIN SECTION STYLES  */
 
 /* START OF Order Form Styles */
-  .entrees {
+  .entrees {  /* Aligns entree buttons */
     text-align: center;
   }
-  .order-form {
+  .order-form { /* Style for controls container */
     margin: auto;
     margin-top: 20px;
     padding: 2vw;
     height: max-content;
-    width: max-content;
+    max-width: 35vw;
     background-color: rgb(197, 224, 206);
     border-radius: 10px;
   }
-  .btn-default {
+  .btn-default {  /* Entree button styling */
     padding: 1vw;
     width: 10.1vw;
     min-width: max-content;
@@ -87,7 +87,7 @@ nav ul li:hover {
     background-color: darkgreen;
   }
 
-  /* Selected button */
+  /* Selected entree button style */
   .btn-active-entree {
     padding: 1vw;
     width: 10.1vw;
@@ -103,17 +103,42 @@ nav ul li:hover {
     background-color: rgb(155, 34, 4);
   }
 
-  .add-ons div {
-    background-color: rgb(89, 194, 89);
-    width: 29vw;
-    font-size: 1.2em;
+  /* ADD ONS STYLING */
+  .btn-add-ons {
     padding: 1vw;
-    margin: 5px;
+    width: 10.1vw;
+    min-width: max-content;
+    background-color: rgb(106, 206, 106);
     color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    border: none;
+    margin: 2px 1px 2px 1px;
   }
-  .add-ons div:hover {
+  .btn-add-ons:hover {
     background-color: green;
   }
+  .btn-add-ons-active {
+    padding: 1vw;
+    width: 10.1vw;
+    min-width: max-content;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    border: none;
+    margin: 2px 1px 2px 1px;
+    background-color: red;
+  }
+  .btn-add-ons-active:hover {
+    background-color: darkred;
+  }
+  .add-ons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /* END OF ADD ONS STYLING */
+
   label {
     display: inline-block;
     width: 90%;

@@ -11,9 +11,11 @@ const saladPrice     = 4.95;
 const addOnPrice     = 0.75;
 
 function placeOrder() {
-  
-
-
+  if(total > 0) {
+    alert("Your order has been placed!")
+  } else {
+    alert("Could not place order. Please try again.")
+  }
 }
 
 function chooseEntree(buttonID) {
@@ -24,33 +26,45 @@ function chooseEntree(buttonID) {
 
   if(selectedItem.classList.contains(defaultCSS)) {
     selectedItem.classList.replace(defaultCSS, activeCSS); // if unselected, select button
-    subtotal += getEntreePrice(buttonID);
+    subtotal += getPrice(buttonID);
   } else {
     selectedItem.classList.replace(activeCSS, defaultCSS); // if selected, unselect button
-    subtotal -= getEntreePrice(buttonID);
+    subtotal -= getPrice(buttonID);
   }
 
   calculateTotals();
 }
 
-function chooseAddOns() {
-  const addOns = document.getElementsByClassName("add-on-items");
+function chooseAddOns(buttonID) {
+  const selectedItem = document.getElementById(buttonID);
   
+  const defaultCSS = "btn-add-ons";
+  const activeCSS = "btn-add-ons-active";
+
+  if(selectedItem.classList.contains(defaultCSS)) {
+    selectedItem.classList.replace(defaultCSS, activeCSS); // if unselected, select button
+    subtotal += getPrice("addOnPrice");
+  } else {
+    selectedItem.classList.replace(activeCSS, defaultCSS); // if selected, unselect button
+    subtotal -= getPrice("addOnPrice");
+  }
+
+  calculateTotals();
 }
 
-function getEntreePrice(id) {
+function getPrice(id) {
   switch(id) {
     case(id = "hamburger"):
       return hamburgerPrice;
-      break;
       
     case(id = "pizza"):
       return pizzaPrice;
-      break;
 
     case(id = "salad"):
       return saladPrice;
-      break;
+
+    case(id = "addOnPrice"):
+      return addOnPrice;
   }
 }
 
