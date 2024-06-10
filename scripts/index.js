@@ -11,7 +11,7 @@ const saladPrice     = 4.95;
 const addOnPrice     = 0.75;
 
 function placeOrder() {
-  if(total > 0) {
+  if(total > 0.01) {
     alert("Your order has been placed!")
   } else {
     alert("Could not place order. Please try again.")
